@@ -77,4 +77,3 @@ nextNum: for (let i = 2; i <= n; i++) {
 
   alert(i);
 }
-new line();
