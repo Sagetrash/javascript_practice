@@ -67,12 +67,13 @@
 //   num = +prompt("enter a number greater than 100", 0);
 // } while (num <= 100 && num);
 
-// n = +prompt("enter the value of n: "); //prime numbers from 2 uptill a specific number
-// nextNum: for (let i = 2; i <= n; i++) {
-//   for (j = i - 1; j > 1; j--) {
-//     if (i % j == 0) {
-//       continue nextNum;
-//     }
-//   }
-//   alert(i);
-// }
+n = +prompt("enter the value of n: "); //prime numbers from 2 uptill a specific number
+nextNum: for (let i = 2; i <= n; i++) {
+  for (let j = 2; j <= Math.sqrt(i); j++) {
+    if (i % j == 0) {
+      continue nextNum;
+    }
+  }
+
+  alert(i);
+}
