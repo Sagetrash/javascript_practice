@@ -67,13 +67,58 @@
 //   num = +prompt("enter a number greater than 100", 0);
 // } while (num <= 100 && num);
 
-n = +prompt("enter the value of n: "); //prime numbers from 2 uptill a specific number
-nextNum: for (let i = 2; i <= n; i++) {
-  for (let j = 2; j <= Math.sqrt(i); j++) {
-    if (i % j == 0) {
-      continue nextNum;
-    }
-  }
+// n = +prompt("enter the value of n: "); //prime numbers from 2 uptill a specific number
+// nextNum: for (let i = 2; i <= n; i++) {
+//   for (let j = 2; j <= Math.sqrt(i); j++) {
+//     if (i % j == 0) {
+//       continue nextNum;
+//     }
+//   }
 
-  alert(i);
+//   alert(i);
+// }
+// Switch Statement
+// let a = 2 + 1;
+// switch (a) {
+//   case 3:
+//     alert("too small");
+//     break;
+//   case 5:
+//   case 4:
+//     alert("exactly");
+//     break;
+// }
+// convert switch to if
+// if (browser == "Edge") {
+//   alert("you've got the Edge!");
+// } else if (
+//   browser == "Chrome" ||
+//   browser == "Safari" ||
+//   browser == "Firefox" ||
+//   browser == "Opera"
+// ) {
+//   alert("okay browser you have");
+// } else {
+//   alert("we hope the webpages loads for you!");
+// }
+//////////convert if into switch
+// let a = +prompt("a?", "");
+// switch (a) {
+//   case 0:
+//     alert(0);
+//     break;
+//   case 1:
+//     alert(1);
+//     break;
+//   case 2:
+//   case 3:
+//     alert("2, 3");
+//     break;
+// }
+//////////////////    FUNCTIONS
+function showMessage() {
+  alert("Hello World!");
 }
+
+showMessage();
+showMessage();
