@@ -121,3 +121,50 @@
 // }
 // showMessage();
 // showMessage();
+
+// function showMessage(from = "Anonymous", text = "no text given") {
+//   from = "*" + from + "*";
+//   alert(from + ": " + text);
+// }
+
+// let from = "Anna";
+// showMessage("hello!");
+// alert(from);
+
+/// using '?' or '||'
+
+// function checkAge(age) {
+//   return age >= 18 || confirm("did u take permission");
+// }
+
+// checkAge(10);
+
+// function checkAge(age) {
+//   return age >= 18 ? true : confirm("took permission?");
+// }
+
+// function min(a, b) {
+//   return a > b ? b : a;
+// }
+// alert(min());
+
+// function pow(x, n) {
+//   let result = 1;
+//   if (checkN(n)) {
+//     for (let i = 0; i < n; i++) {
+//       result = result * x;
+//     }
+//     return result;
+//   } else {
+//     return "error n is not a natural number";
+//   }
+// }
+
+// function checkN(n) {
+//   return n > 0;
+// }
+
+// x = +prompt("enter the value of x:");
+// n = +prompt("enter the value of n:");
+
+// alert(pow(x, n));
