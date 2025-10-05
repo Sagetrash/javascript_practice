@@ -116,9 +116,8 @@
 //     break;
 // }
 //////////////////    FUNCTIONS
-function showMessage() {
-  alert("Hello World!");
-}
-
-showMessage();
-showMessage();
+// function showMessage() {
+//   alert("Hello World!");
+// }
+// showMessage();
+// showMessage();
