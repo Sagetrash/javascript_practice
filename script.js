@@ -168,3 +168,48 @@
 // n = +prompt("enter the value of n:");
 
 // alert(pow(x, n));
+
+//////////////////////////////////////////// Function Expressions
+// function ask(question, yes, no) {
+//   confirm(question) ? yes() : no();
+// }
+
+// ask(
+//   "do you agree?",
+//   function () {
+//     alert("You agreed.");
+//   },
+//   function () {
+//     alert("You canceled the execution.");
+//   }
+// );
+
+// let age = prompt("What is your age?", 18);
+
+// // conditionally declare a function
+// if (age < 18) {
+//   function welcome() {
+//     alert("Hello!");
+//   }
+// } else {
+//   function welcome() {
+//     alert("Greetings!");
+//   }
+// }
+
+// // ...use it later
+// welcome(); // Error: welcome is not defined
+
+// let age = +prompt("What is your age?:");
+// let welcome;
+// if (age < 18) {
+//   welcome = function () {
+//     alert("hello");
+//   };
+// } else {
+//   welcome = function () {
+//     alert("Greetings");
+//   };
+// }
+
+// welcome();
