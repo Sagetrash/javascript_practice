@@ -245,3 +245,59 @@
 // } else {
 //   alert(pow(x, n));
 // }
+
+/////////  Objects
+// let user_ = new Object(); //object contructor
+// let user_ = {}; //"object literal" syntax
+
+// let name = "Ayush";
+// let age = 20;
+// alert(user.name);
+
+// let user = {
+//   name: "john",
+//   age: 30,
+// };
+
+// alert("name" in user);
+
+///// for....in loop
+// let user = {
+//   name: "john",
+//   age: 30,
+//   isAdimind: true,
+// };
+
+// for (let i in user) {
+//   alert(i + ": " + user[i]);
+// }
+/// task: https://javascript.info/object#tasks
+
+// let user = {};
+// user.name = "Ayush";
+// alert(isEmpty(user));
+
+// function isEmpty(obj) {
+//   for (i in obj) {
+//     return false;
+//   }
+//   return true;
+// }
+
+////// task: https://javascript.info/object#sum-object-properties
+
+// let salaries = {
+//     Jogn: 100,
+//     Ann: 160,
+//     Pete: 130,
+// };
+
+// function NetSalaries(obj) {
+//   let sum = 0;
+//   for (let i in obj) {
+//     sum += obj[i];
+//   }
+//   return sum;
+// }
+
+// alert(NetSalaries(salaries));
