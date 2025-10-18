@@ -301,3 +301,36 @@
 // }
 
 // alert(NetSalaries(salaries));
+////// objects are referenced by address.
+
+// let user = { name: "john" };
+// let userref = user;
+
+////////////// cloning objects
+// let user = {
+//   name: "john",
+//   age: 80,
+// };
+
+// Clone = {};
+
+// Object.assign(Clone, user);
+// alert(Clone.name);
+///////////////////////// Merging Objects
+// let user = {};
+// let name = { name: "Ayush" };
+// let age = { age: 20 };
+
+// Object.assign(user, name, age);
+// alert(`${user.name}, ${user.age}`);
+///////////// Structured cloning (deep cloning)
+// let user = {
+//   name: "john",
+//   size: {
+//     length: 182,
+//     width: 50,
+//   },
+// };
+
+// let clone = structuredClone(user);
+// alert(clone.size.length);
