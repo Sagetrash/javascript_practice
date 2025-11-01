@@ -396,6 +396,37 @@
 // acc.read();
 // acc.read();
 // acc.display();
+
 //////////////// Symbols
 // let a = Symbol.for("hey lol");
 // alert(Symbol.keyFor(a));
+
+/////////////////// Object to primitive Conversions
+
+// obj = {
+//   name: "John",
+//   money: 1000,
+
+//   [Symbol.toPrimitive](hint) {
+//     return hint == "string" ? `name: "${this.name}"` : this.money;
+//   },
+// };
+
+// alert(obj);
+// alert(+obj);
+// alert(obj + 500);
+
+// obj = {
+//   name: "john",
+//   money: 1000,
+//   toString() {
+//     return this.name;
+//   },
+//   valueOf() {
+//     return this.money;
+//   },
+// };
+
+// alert(obj);
+// alert(+obj);
+// alert(obj + 1000);
