@@ -358,21 +358,41 @@
 // }
 
 // alert(new A() == new B());
-/////// Create new Calculator
-function Calculator() {
-  this.read = function () {
-    this.a = +prompt("Enter 1st number:");
-    this.b = +prompt("Enter 2nd number:");
-  };
-  this.sum = function () {
-    return this.a + this.b;
-  };
-  this.mul = function () {
-    return this.a * this.b;
-  };
-}
+/////// Create new Calculator ///////////////////
 
-calc = new Calculator();
-calc.read();
-alert("Sum= " + calc.sum());
-alert("Mul= " + calc.mul());
+// function Calculator() {
+//   this.read = function () {
+//     this.a = +prompt("Enter 1st number:");
+//     this.b = +prompt("Enter 2nd number:");
+//   };
+//   this.sum = function () {
+//     return this.a + this.b;
+//   };
+//   this.mul = function () {
+//     return this.a * this.b;
+//   };
+// }
+
+// calc = new Calculator();
+// calc.read();
+// alert("Sum= " + calc.sum());
+// alert("Mul= " + calc.mul());
+
+///////////////////////////////////////////////////////
+// function Accumu(startValue) {
+//   this.value = startValue;
+//
+//   this.read = function () {
+// value = +prompt("Enter a value: ");
+// this.value = this.value + value;
+//   };
+//
+//   this.display = function () {
+// alert("current Value: " + this.value);
+//   };
+// }
+//
+// acc = new Accumu(1);
+// acc.read();
+// acc.read();
+// acc.display();
