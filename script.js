@@ -324,13 +324,55 @@
 // Object.assign(user, name, age);
 // alert(`${user.name}, ${user.age}`);
 ///////////// Structured cloning (deep cloning)
-// let user = {
-//   name: "john",
-//   size: {
-//     length: 182,
-//     width: 50,
-//   },
-// };
+// function user(name) {
+//   this.name = name;
+//   this.IsAdmin = false;
+// }
+
+// newUser = new user("john");
+// alert(newUser.name);
 
 // let clone = structuredClone(user);
 // alert(clone.size.length);
+///////////////////////////////// Methods in Contructor
+
+// function User(name) {
+//   this.name = name;
+//   this.sayHi = function () {
+//     alert("My name is: " + this.name);
+//   };
+// }
+
+// let john = new User("John");
+// john.sayHi();
+
+///// Two Functions - One Object
+
+// let a = {};
+// function A() {
+//   return a;
+// }
+
+// function B() {
+//   return a;
+// }
+
+// alert(new A() == new B());
+/////// Create new Calculator
+function Calculator() {
+  this.read = function () {
+    this.a = +prompt("Enter 1st number:");
+    this.b = +prompt("Enter 2nd number:");
+  };
+  this.sum = function () {
+    return this.a + this.b;
+  };
+  this.mul = function () {
+    return this.a * this.b;
+  };
+}
+
+calc = new Calculator();
+calc.read();
+alert("Sum= " + calc.sum());
+alert("Mul= " + calc.mul());
