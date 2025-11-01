@@ -396,3 +396,6 @@
 // acc.read();
 // acc.read();
 // acc.display();
+//////////////// Symbols
+// let a = Symbol.for("hey lol");
+// alert(Symbol.keyFor(a));
